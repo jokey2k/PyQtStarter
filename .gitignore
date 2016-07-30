@@ -1,3 +1,5 @@
+## based on github python django gitignores
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -60,3 +62,6 @@ target/
 
 #Ipython Notebook
 .ipynb_checkpoints
+
+# OSX temp file
+.DS_Store
