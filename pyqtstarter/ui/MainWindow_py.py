@@ -25,14 +25,17 @@ class Ui_MainWindow(object):
         self.menubar.setObjectName("menubar")
         self.menuFile = QtWidgets.QMenu(self.menubar)
         self.menuFile.setObjectName("menuFile")
+        self.menuFile_2 = QtWidgets.QMenu(self.menubar)
+        self.menuFile_2.setObjectName("menuFile_2")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
         self.actionAbout_Qt = QtWidgets.QAction(MainWindow)
         self.actionAbout_Qt.setObjectName("actionAbout_Qt")
-        self.menuFile.addAction(self.actionAbout_Qt)
+        self.menuFile_2.addAction(self.actionAbout_Qt)
         self.menubar.addAction(self.menuFile.menuAction())
+        self.menubar.addAction(self.menuFile_2.menuAction())
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -41,6 +44,7 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "PyQtStarter Minimal Example"))
         self.centeredPushButton.setText(_translate("MainWindow", "PushButton"))
-        self.menuFile.setTitle(_translate("MainWindow", "File"))
+        self.menuFile.setTitle(_translate("MainWindow", "PyQtStarter"))
+        self.menuFile_2.setTitle(_translate("MainWindow", "File"))
         self.actionAbout_Qt.setText(_translate("MainWindow", "About Qt"))
 
